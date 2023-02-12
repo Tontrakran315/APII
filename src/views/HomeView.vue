@@ -9,7 +9,7 @@
 <script setup lang="ts">
 import axios from"axios";
 import { ref } from "vue";
-const Data = ref([]);
+const Data = ref();
 const url = ref('https://makeup-api.herokuapp.com/api/v1/products.json?brand=maybelline')
 function LoadUser() {
     axios
@@ -21,6 +21,8 @@ function LoadUser() {
         console.log(err);
     })
 }
+
+
 
 
 </script>
